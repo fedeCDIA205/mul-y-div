@@ -1,5 +1,23 @@
 # mul-y-div
-programa de federico 
+programa de federico def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        return "Error: No se puede dividir por cero."
+    return a / b
+
+def main():
+    print("Calculadora de Multiplicación y División")
+    num1 = float(input("Ingresa el primer número: "))
+    num2 = float(input("Ingresa el segundo número: "))
+
+    print(f"{num1} x {num2} = {multiplicar(num1, num2)}")
+    division_result = dividir(num1, num2)
+    print(f"{num1} ÷ {num2} = {division_result}")
+
+if __name__ == "__main__":
+    main()
 def suma(a, b):
     return a + b
 
